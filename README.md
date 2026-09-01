@@ -43,7 +43,7 @@ pip install -r requirements.txt
 ```
 
 **Place the LLM reranker and the catalogue at where the agent can find them.**
-1. Catalogue MUST be at data/catalog.jsonl.
+1. Catalogue MUST be downloaded to data/catalog.jsonl.
 2. LLM Reranker MUST be at assets/model/Qwen3-Reranker-0.6B.
 Download the asset folder from this link: https://drive.google.com/file/d/1kJFmS0nLtYqNbjBJdxPPKW22FuvaNYaJ/view?usp=sharing.
 
@@ -51,15 +51,15 @@ Alternatively, you may download from Huggingface: https://huggingface.co/Qwen/Qw
 
 If the model is missing the agent degrades silently to lexical-only ranking.
 
-Ensure that evaluator imports agent.py from the right path.
-
 ## Run the agent in the official harness
 
-From this directory:
+Run your evaluator (based on your path. This is just an example):
 
 ```bash
 python -m evaluator.local_evaluator
 ```
+
+Ensure that evaluator imports agent.py from the right path.
 
 This runs the official 200-session public evaluation, imports
 agent.py, and writes per-session results and
