@@ -8,6 +8,8 @@ customer's hidden target product within at most 10 turns.
 This bundle is self-contained and runs **fully offline**: no API keys, no
 external services, and no network access are required for official scoring.
 
+**Model is not included in Github due to large file size and must hence be downloaded. Read the setup below.**
+
 ## Contents
 
 ```text
@@ -38,14 +40,13 @@ python -m venv .venv && source .venv/bin/activate   # or conda create -n <env> p
 
 # 2. Install dependencies
 pip install -r requirements.txt
-
-# 3. Place the LLM reranker and the catalogue at where the agent can find them.
-#    Catalogue is already included at data/catalog.jsonl, so no action is required.
-#    LLM Reranker is already included at assets/model/Qwen3-Reranker-0.6B, so no
-#    action is required.
-#    If the model is missing the agent degrades silently to lexical-only
-#    ranking.
 ```
+
+**Place the LLM reranker and the catalogue at where the agent can find them.**
+1. Catalogue MUST be at data/catalog.jsonl.
+2. LLM Reranker MUST be assets/model/Qwen3-Reranker-0.6B.
+Download the asset folder from this link: https://drive.google.com/file/d/1kJFmS0nLtYqNbjBJdxPPKW22FuvaNYaJ/view?usp=sharing
+If the model is missing the agent degrades silently to lexical-only ranking.
 
 The catalog and public sessions are already included under `data/`. If you
 re-download the catalog from the participant-kit release, verify it with the
