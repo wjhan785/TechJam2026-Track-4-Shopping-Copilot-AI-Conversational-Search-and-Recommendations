@@ -15,9 +15,8 @@ external services, and no network access are required for official scoring.
 ```text
 agent.py                          Agent entry re-export
 requirements.txt                  dependency manifest
-assets/model/Qwen3-Reranker-0.6B  local reranker weights (Apache-2.0)
 DATA_ATTRIBUTION.md               data provenance and terms
-REPORT.md                         method, model choice, results, limitations
+REPORT.docx                       method, model choice, results, limitations
 ```
 
 ## Requirements
