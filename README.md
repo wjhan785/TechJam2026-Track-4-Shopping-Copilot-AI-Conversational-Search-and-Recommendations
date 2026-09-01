@@ -77,7 +77,8 @@ Expected aggregate results (verified on the frozen public set):
 
 Runtime is dominated by the lazy local reranker (loaded on first `respond`
 call); measured 32 min 23 s for the full 200-session evaluation on a single
-CPU (≈3.8 s per reranked turn).
+CPU (≈3.8 s per reranked turn). It would be faster if using GPU. However, 
+if using CPU, expect runtime of at least ~2 hours for 800 sessions.
 
 ## Environment variables
 
