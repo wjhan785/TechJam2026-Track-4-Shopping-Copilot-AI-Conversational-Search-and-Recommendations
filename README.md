@@ -51,10 +51,6 @@ Alternatively, you may download from Huggingface: https://huggingface.co/Qwen/Qw
 
 If the model is missing the agent degrades silently to lexical-only ranking.
 
-The catalog and public sessions are already included under `data/`. If you
-re-download the catalog from the participant-kit release, verify it with the
-published `SHA256SUMS` file and place it at `data/catalog.jsonl`.
-
 ## Run the agent in the official harness
 
 From this directory:
@@ -64,7 +60,7 @@ python -m evaluator.local_evaluator
 ```
 
 This runs the official 200-session public evaluation, imports
-`from starter.agent import Agent`, and writes per-session results and
+agent.py, and writes per-session results and
 aggregate metrics to `results.json` in the current directory.
 
 Expected aggregate results (verified on the frozen public set):
