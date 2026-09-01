@@ -45,7 +45,7 @@ pip install -r requirements.txt
 **Place the LLM reranker and the catalogue at where the agent can find them.**
 1. Catalogue MUST be at data/catalog.jsonl.
 2. LLM Reranker MUST be assets/model/Qwen3-Reranker-0.6B.
-Download the asset folder from this link: https://drive.google.com/file/d/1kJFmS0nLtYqNbjBJdxPPKW22FuvaNYaJ/view?usp=sharing
+Download the asset folder from this link: https://drive.google.com/file/d/1kJFmS0nLtYqNbjBJdxPPKW22FuvaNYaJ/view?usp=sharing.
 If the model is missing the agent degrades silently to lexical-only ranking.
 
 The catalog and public sessions are already included under `data/`. If you
