@@ -17,6 +17,7 @@ agent.py                          Agent entry re-export
 requirements.txt                  dependency manifest
 DATA_ATTRIBUTION.md               data provenance and terms
 REPORT.docx                       method, model choice, results, limitations
+results.json                      latest results
 ```
 
 ## Requirements
