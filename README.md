@@ -47,9 +47,11 @@ pip install -r requirements.txt
 2. LLM Reranker MUST be at assets/model/Qwen3-Reranker-0.6B.
 Download the asset folder from this link: https://drive.google.com/file/d/1kJFmS0nLtYqNbjBJdxPPKW22FuvaNYaJ/view?usp=sharing.
 
-Alternatively, you may download from Huggingface: https://huggingface.co/Qwen/Qwen3-Reranker-0.6B and place the model at the correct directory.
+Alternatively, you may download from Huggingface: https://huggingface.co/Qwen/Qwen3-Reranker-0.6B and place the model at assets/model/.
 
 If the model is missing the agent degrades silently to lexical-only ranking.
+
+Ensure that evaluator imports agent.py from the right path.
 
 ## Run the agent in the official harness
 
