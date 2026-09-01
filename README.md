@@ -12,11 +12,7 @@ external services, and no network access are required for official scoring.
 
 ```text
 agent.py                          Agent entry re-export
-starter/agent.py                  the scored Agent implementation (exports Agent)
-evaluator/local_evaluator.py      official local evaluator / simulator harness
 requirements.txt                  dependency manifest
-data/catalog.jsonl                frozen 50,000-product catalog
-data/public_set.jsonl             200 labeled public development sessions
 assets/model/Qwen3-Reranker-0.6B  local reranker weights (Apache-2.0)
 DATA_ATTRIBUTION.md               data provenance and terms
 REPORT.md                         method, model choice, results, limitations
